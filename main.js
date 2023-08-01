@@ -58,25 +58,35 @@ while(numero != "ESC"){
     function datosPasiente(nombre, edad, direccion,num) {
         alert(`${nombre} ${edad} ${direccion} ${num}`);
     }
-        alert("ingrese especi 1odo 2medi 3trau");
-        let num = prompt("ingrese opcion medica")
-        if(num == 1){
-            alert("odontologia")
-        }else if (num == 2){
-        alert("medi")
-        }else if (num == 3){
-        alert("trau")
-        }else{
-        alert("selecione medico")
-        //}
-        num = prompt("ingrese opcion")
-    }
+    alert("ingrese especi 1odontologia 2medicina 3traumatologia");
+    let num = prompt("ingrese opcion medica");
         
+        
+       
+    let salir = prompt("ingrese nº 7 para salir");
+        while (salir == 7);{
+            if(num == 1){
+                alert("odontologia");
+                }else if (num == 2){
+                alert("medi");
+                }else if (num == 3){
+                alert("trau");
+                }else{
+                alert("selecione medico");
+                num = prompt("ingrese opcion");
+                }
+           
+        }
+        
+    
+
+
         alert("ingrese datos del paciente");
         let nombre = prompt("ingrese nombre");
         let edad = prompt("ingrese  edad");
         let direccion = prompt("ingrese su direccion");
     datosPasiente(nombre, edad, direccion, num);
+
 
 
 
