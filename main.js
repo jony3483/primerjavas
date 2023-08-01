@@ -3,10 +3,10 @@
         alert(`${nombre} ${edad} ${direccion} ${num}`);
     }
     alert("ingrese especialidad : 1) odontologia, 2) medicina general, 3) traumatologia");
-    let num = parseIntprompt("ingrese opcion medica");
+    let num = parseInt(prompt("ingrese opcion medica"));
         
         
-    let salir = parseInt(prompt("ingrese el numero 7 para salir"));
+    let salir = parseInt(prompt("ingrese el numero 7 para salir o presione aceptar para continuar"));
         while (salir === 7){
             if(num == 1){
                 alert("odontologia");
@@ -26,15 +26,4 @@
         let edad = prompt("ingrese  edad");
         let direccion = prompt("ingrese su direccion");
         datosPasiente(nombre, edad, direccion, num);
-
-
-
-
-
-
-
-
-
-    
-
 
